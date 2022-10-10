@@ -1,0 +1,15 @@
+register:
+  service:
+    namespace:
+      - io-choerodon
+  server:
+    namespace: io-choerodon
+config:
+  server:
+    enabled: true
+    log: false
+    gateway:
+      names:
+        - api-gateway
+        - gateway-helper
+kubeconfig: /.kube/config
