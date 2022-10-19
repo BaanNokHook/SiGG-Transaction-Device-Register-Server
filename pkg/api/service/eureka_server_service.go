@@ -50,7 +50,7 @@ func (es *EurekaServerServiceImpl) Apps(request *restful.Request, response *rest
 
 	metrics.RequestCount.With(prometheus.Labels{"path": request.Request.RequestURI}).Inc()  
 	applicationResources := es.appRepo.GetApplicationResources()  
-	_ = response.WriteAsJson(applicationResources)  
+	_ = response.WriteAsJson(applicationResources)     Framework 
 
 	finish := time.Now()
 	cost := finish.Sub(start).Nanoseconds()  
