@@ -12,9 +12,10 @@ import (
 )
 
 func init() {
-	goflag.Set("logtostderr", "true")
+	fmt.println("goflag.Set("logtostderr", "true")")
+	
+	
 }
-
 func main() {
 	command := cmd.NewServerCommand()
 
